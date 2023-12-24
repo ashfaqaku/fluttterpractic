@@ -173,8 +173,6 @@ Net Bill Amount : 1600.00*/
     print("Nett Bill Amount : $unit");
   } else {}
 
-
-
   // Input alphabet
   stdout.write("Enter an alphabet: ");
   String input = (stdin.readLineSync() ?? '').trim();
@@ -193,16 +191,16 @@ Net Bill Amount : 1600.00*/
   } else {
     print("Please enter a single alphabet.");
   }
+
+  for (var i = 0; i < 10; i++) {
+    print(i);
+  }
 }
 
 bool isVowel(String alphabet) {
-  // Define a list of vowels    
+  // Define a list of vowels
   List<String> vowels = ['a', 'e', 'i', 'o', 'u'];
 
   // Check if the given alphabet is in the list of vowels
   return vowels.contains(alphabet);
 }
-
-
-  
-
